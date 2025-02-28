@@ -5,8 +5,8 @@ CURRENT_ZSHRC="$HOME/.zshrc"
 BACKUP_ZSHRC="/Users/yaminocellist/git_repos/saveMyEnvironment/zshrc_backup.sh"
 
 # ANSI color codes
-RED='\033[0;31m'
-NC='\033[0m' # No Color
+RED=$'\e[31m'
+NC=$'\e[0m'
 
 # Check if the current .zshrc exists
 if [ ! -f "$CURRENT_ZSHRC" ]; then
@@ -20,7 +20,7 @@ if [ -f "$BACKUP_ZSHRC" ]; then
         echo "The backup is already up to date. No changes needed."
     fi
 
-    read -p "Backup differs from current .zshrc. Overwrite backup (b) or restore backup to .zshrc (r)? (b/r/n): " choice
+    read -p "Backup differs from current .zshrc. Overwrite backup (b) or ${RED}restore backup to .zshrc (r)${NC}? (b/r/n): " choice
     case "$choice" in
         b|B ) 
             echo "Overwriting backup..."
@@ -28,7 +28,7 @@ if [ -f "$BACKUP_ZSHRC" ]; then
             ;;
         r|R ) 
             for i in {1..2}; do
-                read -p "Are you sure you want to restore the backup? This will overwrite your current .zshrc! (yes/no): " confirm
+                read -p "${RED}Are you sure you want to restore the backup? This will overwrite your current .zshrc! (yes/no): ${NC}" confirm
                 if [[ "$confirm" != "yes" ]]; then
                     echo "Restore canceled."
                     exit 0
