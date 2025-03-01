@@ -124,10 +124,12 @@ unset __conda_setup
 # export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
 
 # alias g++='/usr/local/bin/g++-13'
-source /Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/bin/geant4.sh
+# source /Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/bin/geant4.sh
+source /Users/yaminocellist/git_repos/Geant4/geant4/install/bin/geant4.sh
 export LDFLAGS="-L/opt/homebrew/lib"
 export CPPFLAGS="-I/opt/homebrew/include"
 export PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig"/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/bin/geant4.sh
 export G4ENSDFSTATEDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/G4ENSDFSTATE2.3
 export G4PARTICLEXSDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/G4PARTICLEXS4.0
 export G4LEDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/G4EMLOW8.5
+export G4RADIOACTIVEDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/RadioactiveDecay5.6
