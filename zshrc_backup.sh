@@ -125,8 +125,11 @@ unset __conda_setup
 
 # alias g++='/usr/local/bin/g++-13'
 source /Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/bin/geant4.sh
-export LDFLAGS="-L/opt/homebrew/lib"
-export CPPFLAGS="-I/opt/homebrew/include"
+# source /Users/yaminocellist/git_repos/Geant4/install/bin/geant4.sh
+export PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH"
+
+# export LDFLAGS="-L/opt/homebrew/lib"
+# export CPPFLAGS="-I/opt/homebrew/include"
 export PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig"/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/bin/geant4.sh
 export G4ENSDFSTATEDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/G4ENSDFSTATE2.3
 export G4PARTICLEXSDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/G4PARTICLEXS4.0
