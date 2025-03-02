@@ -125,9 +125,18 @@ unset __conda_setup
 
 # alias g++='/usr/local/bin/g++-13'
 # source /Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/bin/geant4.sh
-source /Users/yaminocellist/git_repos/Geant4/geant4/install/bin/geant4.sh
-export LDFLAGS="-L/opt/homebrew/lib"
-export CPPFLAGS="-I/opt/homebrew/include"
+# source /Users/yaminocellist/git_repos/Geant4/geant4/install/bin/geant4.sh
+# export LDFLAGS="-L/opt/homebrew/lib"
+# export CPPFLAGS="-I/opt/homebrew/include"
+# export CC=/opt/homebrew/bin/gcc-14
+# export CXX=/opt/homebrew/bin/g++-14
+# export CPLUS_INCLUDE_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/include/c++/14:/opt/homebrew/Cellar/gcc/14.2.0_1/include/c++/14/aarch64-apple-darwin23
+# export LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/14
+# export LD_LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/14
+export PATH="/opt/homebrew/bin:$PATH"
+alias gcc=gcc-13
+alias g++=g++-13
+
 export PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig"/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/bin/geant4.sh
 export G4ENSDFSTATEDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/G4ENSDFSTATE2.3
 export G4PARTICLEXSDATA=/Users/yaminocellist/git_repos/Geant4/Geant4-11.2.2-Darwin/share/Geant4/data/G4PARTICLEXS4.0
